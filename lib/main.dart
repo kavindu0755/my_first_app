@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
               width: 100,
               height: 100,
               color: Colors.green,
-              child: Center(child: Text("Hello")),
+              child: Center(child: Text("My First App")),
             ),
             SizedBox(
               height: 20,
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
             Container(
               width: 100,
               height: 100,
-              color: Colors.yellow,
+              color: Colors.black,
             ),
             SizedBox(
               height: 20,
