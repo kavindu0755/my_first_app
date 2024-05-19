@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_first/ContactInformationScreen.dart';
 import 'package:flutter_application_first/second_screen.dart';
 
 class FirstScreen extends StatelessWidget {
@@ -92,12 +93,22 @@ class FirstScreen extends StatelessWidget {
                       child: const Center(child: Text("Shop")),
                     ),
                   ),
-                  Container(
-                    width: 150,
-                    height: 50,
-                    color: Colors.white,
-                    child: const Center(child: Text("Contact")),
-                  ),
+
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                        MaterialPageRoute(builder: (context) => const ContactInfomationScreen())
+                      );
+                    },
+
+                    child: Container(
+                      width: 150,
+                      height: 50,
+                      color: Colors.white,
+                      child: const Center(child: Text("Contact")),
+                    ),
+                  )
                 ],
               ),
               const SizedBox(
